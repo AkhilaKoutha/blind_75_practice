@@ -1,0 +1,10 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        is_anagram = False 
+        len_s = collections.Counter(s)
+        len_t = collections.Counter(t)
+
+        if len_s == len_t:
+            is_anagram = True
+        return is_anagram
+        
